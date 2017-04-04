@@ -1,4 +1,5 @@
 /var/log/sensu/sensu-client.log {
+    su sensu sensu
     rotate 7
     daily
     missingok
@@ -11,6 +12,7 @@
 }
 
 /var/log/sensu/sensu-server.log {
+    su sensu sensu
     rotate 7
     daily
     missingok
@@ -23,6 +25,7 @@
 }
 
 /var/log/sensu/sensu-api.log {
+    su sensu sensu
     rotate 7
     daily
     missingok
