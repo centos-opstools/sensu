@@ -2,8 +2,8 @@
 %global gem_name sensu
 
 Name:           %{gem_name}
-Version:        0.27.0
-Release:        3%{?dist}
+Version:        1.1.3
+Release:        1%{?dist}
 Summary:        A monitoring framework
 Group:          Development/Languages
 License:        MIT
@@ -27,13 +27,13 @@ BuildRequires:      rubygem(addressable)
 BuildRequires:      rubygem(em-http-request) >= 1.1.5
 # test suite runtime requirements
 BuildRequires:      rubygem(em-http-server) >= 0.1.8
-BuildRequires:      rubygem(eventmachine) >= 1.2.1
+BuildRequires:      rubygem(eventmachine) >= 1.2.5
 BuildRequires:      rubygem(sensu-extension) >= 1.5.1
-BuildRequires:      rubygem(sensu-extensions) >= 1.7.1
-BuildRequires:      rubygem(sensu-json) >= 2.0.1
+BuildRequires:      rubygem(sensu-extensions) >= 1.9.0
+BuildRequires:      rubygem(sensu-json) >= 2.1.0
 BuildRequires:      rubygem(sensu-logger) >= 1.2.1
-BuildRequires:      rubygem(sensu-redis) >= 2.1.0
-BuildRequires:      rubygem(sensu-settings) >= 9.6.0
+BuildRequires:      rubygem(sensu-redis) >= 2.2.0
+BuildRequires:      rubygem(sensu-settings) >= 10.9.0
 BuildRequires:      rubygem(sensu-spawn) >= 2.2.1
 BuildRequires:      rubygem(sensu-transport) >= 7.0.2
 
@@ -43,13 +43,13 @@ Requires(preun):    systemd
 Requires(postun):   systemd
 # runtime requirements
 Requires:           rubygem(em-http-server) >= 0.1.8
-Requires:           rubygem(eventmachine) >= 1.2.1
+Requires:           rubygem(eventmachine) >= 1.2.5
 Requires:           rubygem(sensu-extension) >= 1.5.1
-Requires:           rubygem(sensu-extensions) >= 1.7.1
-Requires:           rubygem(sensu-json) >= 2.0.1
+Requires:           rubygem(sensu-extensions) >= 1.9.0
+Requires:           rubygem(sensu-json) >= 2.1.0
 Requires:           rubygem(sensu-logger) >= 1.2.1
-Requires:           rubygem(sensu-redis) >= 2.1.0
-Requires:           rubygem(sensu-settings) >= 9.6.0
+Requires:           rubygem(sensu-redis) >= 2.2.0
+Requires:           rubygem(sensu-settings) >= 10.9.0
 Requires:           rubygem(sensu-spawn) >= 2.2.1
 Requires:           rubygem(sensu-transport) >= 7.0.2
 
@@ -187,6 +187,9 @@ exit 0
 # %{gem_instdir}/spec
 
 %changelog
+* Wed Dec 06 2017 Martin Mágr <mmagr@redhat.com> - 1.1.3-1
+- Updated to upstream version 1.1.3
+
 * Wed Sep 13 2017 Matthias Runge <mrunge@redhat.com> - 0.27.0-3
 - import into CentOS opstools, fix build
 
