@@ -3,7 +3,7 @@
 
 Name:           %{gem_name}
 Version:        1.1.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A monitoring framework
 Group:          Development/Languages
 License:        MIT
@@ -187,6 +187,9 @@ exit 0
 # %{gem_instdir}/spec
 
 %changelog
+* Tue Oct 16 2018 Matthias Runge <mrunge@redhat.com> 1.1.3-2
+- bump release to rebuild
+
 * Wed Dec 06 2017 Martin Mágr <mmagr@redhat.com> - 1.1.3-1
 - Updated to upstream version 1.1.3
 
